@@ -1,0 +1,39 @@
+.login-box{
+    margin-top: 200px;
+}
+.loginpage-style{
+    text-decoration: none;
+    color: black;
+}
+.login-main{
+    margin-top: 300px;
+    text-align: center;
+}
+.login-input-area{
+    margin-top: 20px;
+}
+.login-input-box{
+width: 400px;
+height: 60px;
+border: 1px solid #CDDEAF;
+border-radius: 10px;
+padding-left: 30px;
+}
+.login-btn{
+    width: 400px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid #CDDEAF;
+    background-color: #7D9652 ;
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+}
+.login-btn:hover{
+    box-shadow: 0 1px 1px rgb(0, 0, 0/10%);
+    background-color: #CDDEAF;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
