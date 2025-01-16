@@ -1,3 +1,8 @@
-h1{
-color:brown;
+.about{
+padding:0px;
+font-size:40px;
+}
+.about-script{
+    padding-top: 20px;
+    font-size:40px;
 }
