@@ -6,6 +6,12 @@
     height: 3rem; 
     font-size: 1.2rem; /* 글자 크기도 같이 늘리고 싶어서 설정함 */
 }
+.event-bar-img {
+    width: 100%; /* 화면 너비에 맞추기 */
+    height: auto; /* 비율을 유지하면서 높이를 자동 조정 */
+    object-fit: cover; /* 내용이 잘리지 않고 비율에 맞도록 조정 */
+}
+
 .card {
     /* 카드 내용에 따라서 높이 다 다름 수정하기 위해서  */
     display: flex;
@@ -29,8 +35,6 @@
     background-color: #CDDEAF;
     border: 1px solid #CDDEAF;
     color: black;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 700;
     font-size: 22px;
 }
