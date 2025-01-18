@@ -5,97 +5,63 @@
     align-items: center;
     height: 100vh; 
     text-align: center;
-}
-
-.login-text-style{
-    /* 구독제 이용권 결제 주기 선택 text */
+  }
+  
+  .membership-text-style{
     font-weight: 700;
     font-size: 32px;
-}
-
-.loginpage-style {
-    text-decoration: none;
-    color: black;
-}
-
-.month-plan {
-    /* 결제 주기 1,6,12개월 버튼 */
+  }
+  
+  .month-plan {
     width: 500px;
     height: 80px;
     border: 3px solid #CDDEAF;
     border-radius: 10px;
     background-color: white;
+  }
 
-}
-
-.month-plan-text {
-    /* 결제 주기 1,6,12개월 글자스타일 */
-    display: flex; 
-    align-items: center; 
-    width: 100%;
-    height: 100%;
-}
-
-.month-plan-text div:first-child {
-     /* 결제 주기 1개월 글자스타일 */
-    margin-left: 50px; 
-    flex-grow: 1;
-    text-align: left; 
+  .membership-first{
     font-weight: 700;
     font-size: 20px;
-}
-
-.month-plan-text div:nth-child(2) {
-    /* 결제 주기 6개월 글자스타일 */
-    margin-right: 100px; 
-    flex-grow: 1; /* 가운데에 적당히 위치 */
-    text-align: center; 
-}
-
-.month-plan-text div:last-child {
-    /* 결제 주기 12개월 글자스타일 */
-    margin-right: 50px; 
-    flex-grow: 0; 
-    text-align: right;
+  }
+  
+  .membership-last{
     font-weight: 700;
     font-size: 20px;
-}
-
-.month-plan-text img {
-    max-height: 40px; 
-    object-fit: contain; /* 이미지 왜곡 방지 */
-}
-
-.next-btn {
+  }
+  
+  .next-btn{
     width: 400px;
     height: 60px;
     border: 3px solid #7D9652;
     border-radius: 10px;
     background-color: #7D9652;
     color: white;
-
-}
-
-.month-plan:hover {
+  }
+  
+  .next-btn-text{
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+  }
+  
+  .month-plan:hover {
     box-shadow: 0 1px 1px rgb(0, 0, 0 / 10%);
     background-color: #CDDEAF;
     border: 1px solid #dadce0;
     color: #202124;
-}
-
-.next-btn:hover {
+  }
+  
+  .next-btn:hover {
     box-shadow: 0 1px 1px rgb(0, 0, 0 / 10%);
     background-color: #CDDEAF;
     border: 1px solid #dadce0;
     color: #202124;
-}
-
-@media screen and (max-width: 768px) {
-    .month-plan-box {
-        width: 90%; 
-    }
+  }
+  
+  @media screen and (max-width: 768px) {
     .next-btn, .month-plan {
         width: 100%; /* 입력 상자와 버튼을 화면 너비에 맞춤 */
         height: 50px; /* 높이를 줄여 모바일에 적합하게 처리함 */
     }
-}
+  }
