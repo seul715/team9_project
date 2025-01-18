@@ -1,0 +1,47 @@
+.mypage-font-title{
+    font-weight: bold;
+}
+.mypage-custom-btn {
+    width: 100%; 
+    height: 3rem; 
+    font-size: 1.2rem; /* 글자 크기도 같이 늘리고 싶어서 설정함 */
+}
+.card {
+    /* 카드 내용에 따라서 높이 다 다름 수정하기 위해서  */
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: 100%; 
+}
+.card-body {
+    /* 위에 코드로 높이를 동일하게 주니까 버튼의 높이가 또 다 달라서.. 설정함 */
+    flex-grow: 1; /* 내용이 카드 내부 공간을 채우도록 설정 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.mypage-card-img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* 카드 이미지 비율이 안맞아서 이미지가 잘리더라고 1:1 비율으로 보이도록 설정하기 위해서 */
+    object-fit: cover;
+}
+.btn{
+    background-color: #CDDEAF;
+    border: 1px solid #CDDEAF;
+    color: black;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+}
+.card:hover{
+    box-shadow: 0 1px 1px rgb(0, 0, 0 / 50%);
+    border: 5px solid #CDDEAF;
+}
+.btn:hover{
+    box-shadow: 0 1px 1px rgb(0, 0, 0 / 10%);
+    background-color: #7D9652;
+    border: 1px solid #dadce0;
+    color: white;
+
+}
