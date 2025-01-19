@@ -78,49 +78,77 @@
 }
 
 /* nav 끝 */
-.area-about{
-  padding:0px;
-  font-size:40px;
-}
 
-.about-script{
-  padding-top:20px;
-  font-size:40px;
-}
-
-.carousel-img{ /* 캐러셀에서 서로 다른 크기의 이미지들 크기 맞춤 */
-  height:600px;
-  object-fit: cover;
-}
-
-.carousel-caption{  /* 캐러셀 캡션 영역 너비 화면 전체로 확대, 반투명 배경 적용 */
-  left:0%;
-  right:0%;
-  background: rgba(0,0,0,0.5);
-  width:100%;
-}
-
-.area-description{
-  display: flex;
-  justify-content: center;
-}
-.logo{
-  width: 10rem;
-}
-.section-description{
-  display: flex;
-  align-items: center;
-}
-
-
-@media screen and (max-width: 768px) {
-  .section-description{
-      display: flex;
-      flex-direction: column;
+.month-plan-main {
+    /* main 클래스 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    text-align: center;
+  }
+  
+  .membership-text-style{
+    font-weight: 700;
+    font-size: 30px;
+  }
+  
+  .month-plan {
+    width: 500px;
+    height: 80px;
+    border: 3px solid #CDDEAF;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
   }
 
-}
+  .membership-first{
+    font-weight: 700;
+    font-size: 20px;
+  }
+  
+  .membership-last{
+    font-weight: 700;
+    font-size: 20px;
+  }
+  
+  .next-btn{
+    width: 400px;
+    height: 60px;
+    border: 3px solid #7D9652;
+    border-radius: 10px;
+    background-color: #7D9652;
+    color: white;
+  }
+  
+  .next-btn-text{
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+  }
+  
+  .month-plan:hover {
+    box-shadow: 0 1px 1px rgb(0, 0, 0 / 10%);
+    background-color: #CDDEAF;
+    border: 1px solid #dadce0;
+    color: #202124;
+  }
+  
+  .next-btn:hover {
+    box-shadow: 0 1px 1px rgb(0, 0, 0 / 10%);
+    background-color: #CDDEAF;
+    border: 1px solid #dadce0;
+    color: #202124;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .next-btn, .month-plan {
+        width: 100%; /* 입력 상자와 버튼을 화면 너비에 맞춤 */
+        height: 50px; /* 높이를 줄여 모바일에 적합하게 처리함 */
+    }
+  }
 
+  
 /* 푸터 시작 */
   
 footer {
@@ -227,7 +255,8 @@ input:focus {
     padding: 10px;
   }
 
-  .row {
+  /* 스타일 줄때 이름만 줘서 오류..ㅜ (row1으로 임시방편 ) */
+  .row1 {
     display: block;
     padding: 0;
   }
