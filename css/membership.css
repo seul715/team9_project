@@ -1,5 +1,5 @@
 /* nav 시작 */
-  
+
 .navbar {
   padding: 0;
 }
@@ -14,7 +14,7 @@
 
 .nav-link {
   margin-right: 1rem;
-  
+
 }
 
 .nav-link:hover {
@@ -51,9 +51,30 @@
   font-size: 0.8rem;
 }
 
-.nav-right:hover {
+.login:hover {
   border-bottom: none;
   font-size: 0.9rem;
+}
+
+.try-now {
+  border: 1px solid #CDDEAF;
+  background-color: #7D9652;
+  border-radius: 10px;
+}
+
+.try-now:hover {
+  background-color: #CDDEAF;
+  border: 1px solid #dadce0;
+}
+
+@media screen and (max-width: 768px) {
+
+  .try-now {
+    border: none;
+    background-color: white;
+    border-radius: 0;
+  }
+
 }
 
 /* nav 끝 */
@@ -69,7 +90,7 @@
   
   .membership-text-style{
     font-weight: 700;
-    font-size: 32px;
+    font-size: 30px;
   }
   
   .month-plan {
@@ -78,6 +99,7 @@
     border: 3px solid #CDDEAF;
     border-radius: 10px;
     background-color: white;
+    cursor: pointer;
   }
 
   .membership-first{
@@ -233,6 +255,7 @@ input:focus {
     padding: 10px;
   }
 
+  /* 스타일 줄때 이름만 줘서 오류..ㅜ (row1으로 임시방편 ) */
   .row1 {
     display: block;
     padding: 0;
